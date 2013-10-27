@@ -43,6 +43,8 @@ public abstract class AbstractWizardModel implements ModelCallbacks {
      * Override this to define a new wizard model.
      */
     protected abstract PageList onNewRootPageList();
+    
+    public abstract boolean hasReviewPage(); 
 
     @Override
     public void onPageDataChanged(Page page) {

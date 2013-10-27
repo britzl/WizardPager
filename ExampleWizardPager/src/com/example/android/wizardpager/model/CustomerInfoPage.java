@@ -14,13 +14,17 @@
  * limitations under the License.
  */
 
-package co.juliansuarez.libwizardpager.wizard.model;
+package com.example.android.wizardpager.model;
 
 import java.util.ArrayList;
 
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
-import co.juliansuarez.libwizardpager.wizard.ui.CustomerInfoFragment;
+import co.juliansuarez.libwizardpager.wizard.model.ModelCallbacks;
+import co.juliansuarez.libwizardpager.wizard.model.Page;
+import co.juliansuarez.libwizardpager.wizard.model.ReviewItem;
+
+import com.example.android.wizardpager.ui.CustomerInfoFragment;
 
 /**
  * A page asking for a name and an email.

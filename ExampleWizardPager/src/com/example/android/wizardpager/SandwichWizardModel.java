@@ -19,12 +19,13 @@ package com.example.android.wizardpager;
 import android.content.Context;
 import co.juliansuarez.libwizardpager.wizard.model.AbstractWizardModel;
 import co.juliansuarez.libwizardpager.wizard.model.BranchPage;
-import co.juliansuarez.libwizardpager.wizard.model.CustomerInfoPage;
 import co.juliansuarez.libwizardpager.wizard.model.MultipleFixedChoicePage;
 import co.juliansuarez.libwizardpager.wizard.model.NumberPage;
 import co.juliansuarez.libwizardpager.wizard.model.PageList;
 import co.juliansuarez.libwizardpager.wizard.model.SingleFixedChoicePage;
 import co.juliansuarez.libwizardpager.wizard.model.TextPage;
+
+import com.example.android.wizardpager.model.CustomerInfoPage;
 
 public class SandwichWizardModel extends AbstractWizardModel {
 	public SandwichWizardModel(Context context) {
@@ -33,7 +34,8 @@ public class SandwichWizardModel extends AbstractWizardModel {
 
 	@Override
 	protected PageList onNewRootPageList() {
-		return new PageList(new BranchPage(this, "Order type").addBranch(
+		return new PageList(new BranchPage(this, "Order type")
+			.addBranch(
 				"Sandwich",
 				new SingleFixedChoicePage(this, "Bread").setChoices("White",
 						"Wheat", "Rye", "Pretzel", "Ciabatta")
@@ -59,7 +61,7 @@ public class SandwichWizardModel extends AbstractWizardModel {
 												"2 minutes")).addBranch("No")
 						.setValue("No"))
 
-		.addBranch(
+			.addBranch(
 				"Salad",
 				new SingleFixedChoicePage(this, "Salad type").setChoices(
 						"Greek", "Caesar").setRequired(true),
@@ -73,5 +75,10 @@ public class SandwichWizardModel extends AbstractWizardModel {
 				.setRequired(true),
 
 				new CustomerInfoPage(this, "Your info").setRequired(true));
+	}
+
+	@Override
+	public boolean hasReviewPage() {
+		return true;
 	}
 }

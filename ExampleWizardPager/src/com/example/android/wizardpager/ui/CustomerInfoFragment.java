@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.juliansuarez.libwizardpager.wizard.ui;
+package com.example.android.wizardpager.ui;
 
 import android.app.Activity;
 import android.content.Context;
@@ -27,8 +27,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
-import co.juliansuarez.libwizardpager.R;
-import co.juliansuarez.libwizardpager.wizard.model.CustomerInfoPage;
+import co.juliansuarez.libwizardpager.wizard.ui.PageFragmentCallbacks;
+
+import com.example.android.wizardpager.R;
+import com.example.android.wizardpager.model.CustomerInfoPage;
 
 public class CustomerInfoFragment extends Fragment {
     private static final String ARG_KEY = "key";
