@@ -1,6 +1,22 @@
-<resources>
+<!--
+  Copyright 2012 Roman Nurik
 
-    <style name="WizardPageContainer">
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <style name="WizardPageContainer">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
@@ -29,4 +45,18 @@
         <item name="android:paddingRight">12dp</item>
     </style>
 
+    
+    <style name="Wizard.TextAppearanceFinish" parent="@style/TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Small">
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="Wizard.ButtonBar" parent="@android:style/ButtonBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="Wizard.ButtonBarButton" parent="@android:style/Widget.Button">
+        <item name="android:minHeight">@dimen/list_item_height_small</item>
+    </style>
+    
 </resources>
