@@ -16,11 +16,11 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="AppTheme" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="textAppearanceFinish">@style/TextAppearanceFinish</item>
     </style>
 
-    <style name="TextAppearanceFinish" parent="@style/TextAppearance.Sherlock.Small">
+    <style name="TextAppearanceFinish" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
         <item name="android:textColor">#fff</item>
     </style>
 
