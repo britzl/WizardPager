@@ -16,8 +16,9 @@ There is a sample implementation, so you can see how to add this library to your
 Developed By
 ============
 
-* Tech Freak - <tech.freak.blog@gmail.com>
-
+* Forked from code by Tech Freak - <tech.freak.blog@gmail.com>
+* Based on code by Roman Nurik
+* Additions by Björn Ritzl (added the Wizard Activity, made the Review page optional and move the app specific CustomerPage to the example)
 
 License
 =======
