@@ -39,7 +39,7 @@ public abstract class WizardActivity extends FragmentActivity implements PageFra
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_wizard);
 
 		mWizardModel = createWizardModel();
 		if (savedInstanceState != null) {
